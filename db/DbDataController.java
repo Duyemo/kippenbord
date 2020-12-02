@@ -79,8 +79,7 @@ public class DbDataController {
     }
 
     public String getUserEmail(String username) {
-        User user = userRepository.findFirstByUsername(username);
-        return user.getEmail();
+        return "Test Worked";
     }
 
     public boolean deleteUser(String username) {

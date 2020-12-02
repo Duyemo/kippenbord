@@ -66,7 +66,7 @@ public class Controller {
     }
 
     @RequestMapping("/email")
-    public ResponseEntity<Response> getEmail(@RequestParam(value = "username") String username) {
+    public ResponseEntity<Response> getEmail() {
         return ResponseEntity.ok().body(new Response(dbDataController.getUserEmail(username)));
     }
 
